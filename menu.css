@@ -1,0 +1,144 @@
+@font-face {
+    font-family:TTLakes-Medium;
+    src: url(fonts/TTLakes-Medium.woff);
+}
+
+@font-face {
+    font-family:TTLakes-Bold;
+    src: url(fonts/TTLakes-Bold.woff);
+}
+
+body {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 16px 0px 52px 0px #0E185033;
+    width: 320px;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+
+.menu__head {
+    margin-top: 19px;
+}
+
+.head {
+    display: flex;
+    width: 100%;
+}
+
+.head__burger {
+    margin: 5px 0 0 24px;
+}
+
+.head__group {
+    margin-left: 17px;
+    width: 97px;
+    height: 51px;
+} 
+
+.head__search {
+    margin: 5px 24px 0 auto;
+}
+
+.menu__services {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.services__button {
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family:TTLakes-Medium;
+    margin:0 0 24px 32px;
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+}
+
+.services__button:active, .services__button:focus {
+    color: #7E7E82;
+    outline:none;
+}
+
+.services__button:focus::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 28px;
+    left: 0px;
+    transform:translateY(-4px);
+    border: 2px solid #41F6D7;
+    border-radius: 0 6px 6px 0; 
+}
+
+.menu__contact {
+    width: 100%;
+    margin: auto 0 0 24px;
+}
+
+.contact__chat,
+.contact__profile {
+    margin: auto 0 0 24px;
+}
+
+.contact__email {
+    width: 106px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-family:TTLakes-Medium;
+    margin-top: 16px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact__number {
+    font-size: 24px;
+    margin:12px 0 0 0;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-family:TTLakes-Bold;
+}
+
+.menu__language {
+    padding: 0;
+    width: 100%;
+    margin: 40px 0 32px 24px;
+}
+
+.language__button {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-family:TTLakes-Medium;
+    background: none;
+    border:none;
+    cursor: pointer;
+    margin-right: 4px;
+    padding: 0;
+}
+
+.language__button--active {
+    color:#7E7E82;
+}
+
+.head__burger:hover,
+.head__search:hover,
+.language__button:hover,
+.contact__email:hover,
+.contact__profile:hover,
+.contact__chat:hover, 
+.contact__call:hover,
+.services__button:hover {
+    transition: opacity 2s ease;
+    opacity: 0.5;
+}
